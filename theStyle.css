@@ -1,0 +1,108 @@
+.divHeader {
+  padding: 60px;
+  background: #7ca4be;
+  flex: none;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 183.75px;
+  margin-left: 183.75px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.logo {
+  float: left;
+  margin-top: 10px;
+}
+
+li {
+  float: right;
+  padding-top: 22px;
+  padding-left: 22px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.headerFont {
+  font-family: "Times New Roman";
+  font-size: 26px;
+  color: white;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.headlines {
+  font-family: "Times New Roman";
+  color: #22282c;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 49.271px 118.25px;
+  gap: 4.93px;
+  position: absolute;
+  width: 591.74px;
+  height: 338.16px;
+  left: 177.38px;
+  top: 354.26px;
+  background: #e9f6ff;
+  border-radius: 34.4897px;
+  margin: 10%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13.2708px 27.5625px;
+  gap: 5.1px;
+  width: 120.45px;
+  height: 37.54px;
+  background: #22282c;
+  box-shadow: 0px 5.10417px 10.2083px rgba(192, 192, 192, 0.35);
+  border-radius: 9.1875px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  font-size: 9.1875px;
+  color: white;
+}
+
+.SignLogH1{
+  /* Sign Up & Log In */
+  width: 237.34px;
+  height: 35.73px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.5208px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #22282C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+a {
+  text-decoration:underline;
+  color: #22282C;
+}
+
