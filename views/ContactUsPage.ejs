@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us! SportX</title>
+    <script
+      src="https://kit.fontawesome.com/e2ac9cc532.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Pretty Stuff */
+      .contact-form-container {
+        background: #e5f2fb;
+        font-family: "Lato", sans-serif;
+      }
+
+      .contact-us {
+        position: relative;
+        width: 250px;
+        background: #03446f;
+        overflow: hidden;
+      }
+      .contact-us:before {
+        position: absolute;
+        content: "";
+        bottom: -50px;
+        left: -100px;
+        height: 250px;
+        width: 400px;
+        background: #7ca4be;
+        transform: rotate(25deg);
+      }
+      .contact-us:after {
+        position: absolute;
+        content: "";
+        bottom: -80px;
+        right: -100px;
+        height: 270px;
+        width: 400px;
+        background: #afd1e8;
+        transform: rotate(-25deg);
+      }
+
+      .contact-header {
+        color: white;
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 120px;
+        left: -40px;
+      }
+      .contact-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .social-bar {
+        position: absolute;
+        bottom: 20px;
+        left: 75px;
+        z-index: 1;
+        width: 100px;
+      }
+      .social-bar ul {
+        list-style-type: none;
+      }
+      .social-bar ul li {
+        display: inline-block;
+        color: white;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        margin-right: -4px;
+        font-size: 1.2rem;
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        color: #444;
+      }
+      .header h1 {
+        font-weight: normal;
+      }
+      .header h2 {
+        margin-top: 10px;
+        font-weight: 300;
+      }
+
+      .address,
+      .email,
+      .phone {
+        text-align: center;
+        padding: 20px 0;
+        color: #444;
+      }
+      .address h3,
+      .email h3,
+      .phone h3 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .address i,
+      .email i,
+      .phone i {
+        color: #7ca4be;
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+      }
+
+      form {
+        position: relative;
+        width: 440px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+      form input,
+      form textarea {
+        background: white;
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        border: 0;
+      }
+      form input {
+        height: 40px;
+        line-height: 40px;
+        outline: 0;
+        border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+        font-size: 1rem;
+        color: rgba(68, 68, 68, 0.8);
+      }
+      form textarea {
+        border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+        resize: none;
+        outline: none;
+        font-size: 1rem;
+        font-family: lato;
+        color: #03446f;
+      }
+      form button {
+        position: absolute;
+        display: block;
+        height: 40px;
+        width: 250px;
+        left: 95px;
+        border: 0;
+        border-radius: 20px;
+        bottom: -20px;
+        background: #03446f;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 300;
+        outline: none;
+      }
+
+      .contact-form {
+        padding-bottom: 40px;
+      }
+
+      /* Layout Stuff */
+      body {
+        background: #ffffff;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .contact-form-container {
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 2fr;
+        grid-template-areas: "contact-us header header header" "contact-us address phone email" "contact-us contact-form contact-form contact-form";
+      }
+
+      .contact-us {
+        grid-area: contact-us;
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .address {
+        grid-area: address;
+      }
+
+      .phone {
+        grid-area: phone;
+      }
+
+      .email {
+        grid-area: email;
+      }
+
+      .contact-form {
+        grid-area: contact-form;
+      }
+
+      /* Header CSS starts */
+      ul {
+        list-style: none;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      header nav {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li a {
+        padding: 40px 10px;
+        color: #000000;
+        text-decoration: none;
+      }
+      h1 span a {
+        text-decoration: none;
+        color: #000000;
+      }
+      nav ul li a:hover {
+        color: #7ca4be;
+      }
+      /* Header CSS starts */
+
+      /* Footer CSS starts */
+      .footer {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .footer-wraper {
+        margin-top: 30px;
+      }
+      .brand-container {
+        display: flex;
+        text-align: start;
+        color: #4d5053;
+      }
+      .brand-container h1 {
+        color: #000000;
+      }
+      .pages-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 12px;
+      }
+      .content li a {
+        text-decoration: none;
+        color: #000000;
+      }
+      .copyright p {
+        text-align: center;
+        font-size: small;
+      }
+      .copyright p a {
+        padding: 30px 0;
+        text-align: center;
+        color: #4d5053;
+        text-decoration: none;
+      }
+      .copyright p a:hover {
+        color: #7ca4be;
+      }
+      /* Footer CSS ends */
+
+      .content h3 {
+        color: #000000;
+      }
+
+      .content p {
+        color: #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--header starts-->
+    <header>
+      <div class="header">
+        <h1>
+          <span> <img src="logo.svg" alt="logo" /></span>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="/"><strong>Home</strong></a>
+            </li>
+            <li>
+              <a href="/community"><strong>Community</strong></a>
+            </li>
+            <li>
+              <a href="/login"><strong>Login</strong></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--header ends-->
+
+    <div class="contact-form-container">
+      <div class="contact-us">
+        <div class="contact-header">
+          <h1>&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT US</h1>
+        </div>
+        <div class="social-bar">
+          <ul>
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <h1>Contact Us</h1>
+        <!-- <h2>Contact us now and let's hear from you!</h2> -->
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Saudi Arabia, Riyadh</h3>
+      </div>
+      <div class="phone">
+        <i class="fas fa-phone-alt"></i>
+        <h3>0512345678</h3>
+      </div>
+      <div class="email">
+        <i class="fas fa-envelope"></i>
+        <h3>contact@sports.com</h3>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input placeholder="Name" type="text" /><input
+            placeholder="Email"
+            type="email"
+          /><textarea placeholder="Message..." rows="4"></textarea
+          ><button type="button">SEND</button>
+        </form>
+      </div>
+    </div>
+    <!--footer starts-->
+    <footer>
+      <section class="footer">
+        <div class="brand-container">
+          <ul class="content">
+            <li>
+              <img src="logo.svg" alt="logo" />
+            </li>
+            <li>Rent private courts for great playing</li>
+          </ul>
+        </div>
+        <div class="pages-container">
+          <ul class="content">
+            <li><h3>Pages</h3></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="contact-container">
+          <ul class="content">
+            <li><h3>Contact</h3></li>
+            <li><a href="#">Riyadh, Saudi Arabia</a></li>
+            <li><a href="#">contact@sports.com</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>
+          Copyright &copy; <a href="/"><strong>SportX</strong></a> |
+          2023
+        </p>
+      </section>
+    </footer>
+    <!--footer ends-->
+  </body>
+</html>

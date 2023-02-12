@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>SportX</title>
+    <script src="./js/script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tennis.css" />
+ <link rel="stylesheet" href="calender.css">
+<link rel="stylesheet" href="header_footer.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="./js/calender.js" defer></script>
+<style>
+</style>
+</head>
+<body>
+	<!--header starts-->
+  <header>
+		<div class="header">
+			<h1><span><a href="/">SportX</a></span></h1>
+			<nav>
+			<ul>
+				<li><a href="/"><strong>Home</strong></a></li>
+				<li><a href="/community"><strong>Community</strong></a></li>
+				<li><a href="/login"><strong>Login</strong></a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+    <!--header ends-->
+	<section class="section1">
+	 <div class="container">
+		<img src="matches.img/Football.jpg" width="100%" height="320px"/>
+		<div class="details">
+			<h1>Football </h1>
+			<span class="citiy">	<i class = "fa fa-map-marker" > </i><span>Riaydh</span></span>
+    </div>	
+	</div>
+	</section>
+	
+	
+	<section class="rating">
+		<div class="container">
+			<div class="border">
+
+						<a href="http://maps.google.com/maps?q=210+Louise+Ave,+Nashville,+TN+37203">
+					<img  src="/matches.img/rate.png" width="105%" height="130%" alt="Avatar">
+			   	</a>
+			</div>
+		</div>
+	
+	</section>
+  <section class="date">
+
+         <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+   <div class="timeContainer">
+   	<div class="time">Time :</div>
+		<span class="timeValue choosen" onclick="chooseTime(this)">18:30</span>
+		<span class="timeValue" onclick="chooseTime(this)">18:30</span>
+		<span class="timeValue" onclick="chooseTime(this)">18:30</span>
+	</div>
+   </section>
+    <section class="price">
+   	<div class="container">
+			<h1>Total Price</h1>
+			 <h2 class="pr"><i class="fa fa-usd"></i>25 <span>/person</span></h2>
+		</div>
+		
+		<div class="book"><a href=" ">Book now<i class="fa fa-angle-right bookicon"></i></a></div>
+    </section>
+<!--footer starts-->
+<footer>
+  <section class="footer">
+      <div class="brand-container">
+          <ul class="content">
+              <li><h1><a href="/">SportX</a></h1></li>
+              <li>Rent private courts for great playing</li>
+          </ul>
+      </div>
+      <div class="pages-container">
+          <ul class="content">
+              <li><h1>Pages</h1></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="contact-container">
+          <ul class="content">
+              <li><h1>Contact</h1></li>
+              <li><a href="NotFound.html">Riyadh, Saudi Arabia</a></li>
+              <li><a href="#">contact@sports.com</a></li>
+          </ul>
+      </div>
+  </section>
+  <section class="copyright">
+      <p>Copyright &copy; <a href="/"><strong>SportX</strong></a> | 2023</p>
+  </section>
+</footer>
+<!--footer ends-->
+</body>
+
+	<script>
+	
+	function chooseTime(element) {
+  var timeValue= document.getElementsByClassName("timeValue");
+
+for (let i = 0; i <timeValue.length; i++) {
+	timeValue[i].style.color="#99ccff";
+  timeValue[i].style.backgroundColor="#fff";
+	}
+
+  element.style.color="#fff";
+element.style.backgroundColor="#99ccff";
+  
+}
+	</script>
+</html>

@@ -1,0 +1,395 @@
+
+/*HEADER OF NAV CSS*/
+    ul {
+	    list-style:none;
+	}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header nav {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li a {
+        padding: 40px 10px;
+        color: #000000;
+        text-decoration: none;
+    }
+    h1 span a {
+        text-decoration: none;
+        color: #000000;
+    }
+    nav ul li a:hover{
+        color: #7CA4BE;
+    }
+/*END OF HEADER OF NAV CSS*/
+
+/*******************************/
+/********** Hero CSS ***********/
+/*******************************/
+    .hero {
+        position: relative;
+        width: 1200px;
+        height: 757px;
+        left: 100px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        background-image: url("Banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        overflow: hidden;
+
+    }
+
+    .hero .container-fluid {
+        padding: 0;
+    }
+    .hero .hero-text {
+        position: relative;
+        padding-left: 75px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero .hero-text h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        width: 558.4px;
+        padding-top: 350px;
+    }
+
+    .hero .hero-text p {
+        color: #A7BDCB;
+        font-size: 18px;
+        margin-bottom: 55px;
+    }
+
+    .hero .hero-btn .btn {
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing: 1px;
+        color: white;
+        background: #22282C;
+        border-radius: 9px;
+        text-decoration: none;
+        box-shadow: 0px 5.10417px 10.2083px rgba(192, 192, 192, 0.35);
+    }
+
+    .hero .hero-btn .btn:hover {
+        color: #343148;
+        background: #ffffff;
+    }
+
+/*******************************/
+/****** END OF Hero CSS ********/
+/*******************************/
+
+
+/*TABLE CSS STARTS*/
+    .table {
+        width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
+        margin-left: 100;
+        }
+
+    .BB {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4D5053;
+        font-size: 22px;
+    }
+    .BB .HF .LR h1{
+        color: #22282C;
+    }
+
+    .HF {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4D5053;
+        font-size: 22px;
+    }
+    .LR {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4D5053;
+        font-size: 22px;    
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 10px;
+
+    }
+    .content li {
+        text-decoration: none;
+        text-align: center;
+    }
+/*TABLE CSS ENDS*/
+
+/*STARTS OF SERVICES CSS*/
+    .sectionS{
+        position: relative;
+        width: 1300px;
+        top: 30px;
+    }
+    .card {
+        width: 240px;
+        height: auto;
+        margin: 0px;
+        padding: 10px;
+    }
+    .sectionS .cont{
+        display: flex;
+        flex: 2;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px 350px 0px 350px;
+    }	
+    #pic{
+            margin: auto;
+    }
+/*END OF SERVICES CSS*/
+
+
+/*BOOK A COURT CSS*/
+    .book-write{
+        position: relative;
+        width: 1200px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        text-align: center;
+        margin: auto;
+    }
+    .book-write h2{
+        color: #22282C;
+    }
+    .book-write p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4D5053;
+        font-size: 22px;
+    }
+
+    .section2{
+        position: relative;
+        width: 100%;
+        top: 10px;
+    }
+    .card {
+        width: 240px;
+        height: auto;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 12px;
+    }
+    .left span {
+        display: flex;
+        flex-direction: column;
+    }
+    #s2{
+            font-size: small;
+    }
+    .bottom .right {
+        width: 22px;
+        height: 22px;
+        background-color: #659EC7;
+        border-radius: 50%;
+        padding: 8px;
+        text-align: center;
+    }
+    .bottom .right a{
+        text-decoration: none;
+        color: white;   
+    }
+    .section2 .cont{
+        display: flex;
+        flex: 2;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px 350px 0px 350px;
+    }	
+    .card {
+            margin: 0px;
+            padding: 10px;
+    }
+/*END OF BOOK A COURT CSS*/
+
+
+
+
+.numbers .container-fluid .numtable {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    padding: 45px 0 45px 0;
+    background: #7CA4BE;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+}
+#numH2{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43.3854px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+
+/*******************************/
+/********* JOIN US CSS **********/
+/*******************************/
+
+#joinus{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40.8333px 160.781px;
+    gap: 5.1px;
+
+    position: absolute;
+    width: 611.99px;
+    height: 190.16px;
+    left: 183.75px;
+    /* top: 2957.86px; */
+
+    background: #22282C;
+    border-radius: 35.7292px;
+
+    color: white;
+}
+/*عدلي التوب داخله ^^*/
+
+.join-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13.2708px 18.8854px;
+    gap: 5.1px;
+
+    width: 140px;
+    height: 30px;
+
+    /* Secondary */
+
+    background: #7CA4BE;
+    box-shadow: 0px 5.10417px 10.2083px #1F2022;
+    border-radius: 9.1875px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: white;
+    text-decoration: none;
+}
+
+/*******************************/
+/***** END OF JOIN US CSS ******/
+/*******************************/
+
+
+
+    /* Footer CSS starts */
+    .footer {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-wraper {
+        margin-top: 30px;
+    }
+    .brand-container {
+        display: flex;
+        text-align: start;
+        color: #4D5053 
+    }
+    .brand-container h1{
+        color: #000000;
+    }
+    .pages-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 12px;
+    }
+
+    .content li a{
+        text-decoration: none; color: #000000;
+    }
+    .copyright p{
+        text-align: center;
+        font-size: small;
+    }
+    .copyright p a{
+        padding: 30px 0;
+        text-align: center;
+        color: #4D5053;
+        text-decoration: none;
+    }
+    .copyright p a:hover {
+        color: #7CA4BE;
+    }
+    /* Footer CSS ends */

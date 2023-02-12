@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  
+ font-family: 'Poppins', sans-serif;
+
+}
+
+
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    background : white;
+    color : black;
+height: 100vh;
+}
+ul{
+	list-style:none;
+	}
+header
+{
+}
+.header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 70px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+header .header::affter
+{
+	content: ' ';
+	position: absolute;
+	}
+	
+	header nav
+{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	}
+	
+	nav ul
+{
+	display: flex;
+	}
+	
+	nav ul li
+{
+	
+	padding: 40px 10px;
+	
+	}
+	
+	
+.section1
+{
+	position: relative;
+	height: 320px;
+	width: 100%;
+	background-color: transparent;
+	text-align:center;
+	
+	}
+	
+.details
+{
+position: absolute ;
+bottom: 48px;
+left: 24px;
+}
+
+.details  span
+{
+position: absolute ;
+left: 0px;
+top: 32px;
+}
+.details span span
+{
+	top: 2px;
+left: 32px;
+font-size: 24px;
+}
+.details span i
+{
+margin-right: 16px;
+font-size:32px;
+color: #808080;
+}
+	
+.rating
+{
+	width: 100%;
+	height: 250px;
+	}
+	
+.rating .container
+{
+
+width: 100%;
+height: 100%;
+text-align: center;
+}
+.rating .container .border
+{
+	
+	margin: 75px  25% 75px 25%;
+	width: 50%;
+	border-radius: 16px;
+	height: 100px;
+	position: absolute;
+	background-color: transparent;
+	padding: 8px;
+	display: flex;
+	}
+	
+.checked {
+  color: orange;
+margin-right: 5px;
+}
+
+.left
+{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	top: 30%;
+	}
+	
+.left h3
+{
+	padding: 4px;
+	}
+	
+.left div
+{
+	
+	padding: 4px;
+	}
+	
+	.vl {
+  border-left: 3px solid #808080;
+  height: 90px;
+  margin: auto 80px;
+}
+
+.avater {
+  border-radius: 50%;
+}
+
+.circle
+{
+	position: absolute;
+	left: 100px;
+	margin-top: 28px;
+}
+
+.border .right .map
+{
+position: absolute;
+right: 8px;
+
+}
+.date
+{
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.timeContainer
+{
+display: flex;
+justify-content: center;
+font-size: 0.9rem;
+margin: 12px 25px;
+}
+.time
+{
+margin: 12px 25px;
+line-height: 160%;
+font-family: "Times New Roman", Times, serif;
+font-size: 1.2rem;
+}
+.timeContainer .timeValue
+{
+ padding: 0px 12px 0px 12px;
+width: 40px;
+height: 24px;
+ background-color:#fff;
+line-height: 200%;
+ border-radius: 8px;
+margin: 12px 8px;
+border-style: solid;
+border-color: #99ccff;
+color: #99ccff;
+}
+.timeContainer .choosen
+{
+background-color: #99ccff;
+color: #fff;
+
+}
+.price
+{
+	flex: 1;
+	display: flex;
+	justify-content:space-between;
+	width: 100%;
+	height: 200px;
+	margin-top: 120px;
+	
+	}
+	
+	.price .container
+	{
+		margin: auto auto;
+		}
+		.price .book
+	{
+		margin: auto auto;
+		}	
+.price .container h1
+{
+
+font-family: "Times New Roman", Times, serif;
+font-size: 1.7rem;
+margin: 5px;
+
+}
+.price .container h2
+{
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 3rem;
+margin: 5px;
+
+}
+.price .container h2 i
+{
+font-size: 1.4rem;
+position: relative ;
+top: -15px;
+margin: 4px;
+color: #808080;
+
+}
+.price .container h2 span
+{
+font-size: 1rem;
+position: relative ;
+bottom: 0;
+margin: 4px;
+left: -5px;
+color: #99ccff;
+}
+		.book a
+{
+	text-decoration: none;
+	padding: 16px 32px;
+	background-color: #4169E1;
+	color:white;
+	font-size: 1.2rem;
+	border-radius: 32px;
+	font-weight: 300;
+	}
+	
+.bookicon
+{
+	 margin-left: 8px;
+	 font-size: 1.7rem;
+	
+	}
+	h1{
+		color: #fff;
+		font-family: 'Courier New', Courier, monospace;
+	}
+	span{
+		color: #fff;
+	}
