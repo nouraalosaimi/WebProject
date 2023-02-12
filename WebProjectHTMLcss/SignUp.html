@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create a new account on SportX</title>
+
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /* Header CSS starts */
+        ul {
+            list-style:none;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 70px;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header nav {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li a {
+            padding: 40px 10px;
+            color: #000000;
+            text-decoration: none;
+        }
+        h1 span a {
+            text-decoration: none;
+            color: #000000;
+        }
+        nav ul li a:hover{
+            color: #7CA4BE;
+        }
+        /* Header CSS starts */
+
+        /*UNDER HEADER CSS STARTS*/
+        .box-container {
+            height: 200px;
+            background: #7ca4be;
+        }
+
+        .box-wraper {
+            position: relative;
+            width: 40%;
+            margin: auto;
+            height: 100%;
+        }
+        .box-wraper .box {
+            position: absolute; 
+            bottom: 0;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 45%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .box-wraper .box h1 {
+            padding: 15px 0;
+        }
+        /*UNDER HEADER CSS STARTS*/
+
+
+        /*BOX AND INFO CSS*/
+        html {
+        height: 100%;
+        }
+        body {
+        margin:0;
+        padding:0;
+        background: white;
+        font-family: 'Poppins', sans-serif;
+        }
+
+        .box-container .box-wraper h1{
+            font-size: larger;
+        }
+        .login-box {
+        position: relative;
+        top: 220px;
+        left: 50%;
+        margin-top: 90px;
+        margin-bottom: 45px;
+        width: 591px;
+        padding: 40px 120px;
+        transform: translate(-50%, -50%);
+        background:#E9F6FF;
+        box-sizing: border-box;
+        border-radius: 34px;
+        }
+
+        .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #22282C;
+        text-align: center;
+        }
+
+        .login-box .user-box {
+        position: relative;
+        }
+
+        .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #22282C;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #22282C;
+        outline: none;
+        background: transparent;
+        }
+        .login-box .user-box label {
+        position: absolute;
+        top:0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #22282C;
+        pointer-events: none;
+        transition: .5s;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #22282C;
+        font-size: 12px;
+        }
+
+        .login-box form #a1 {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 2px;
+        background: #22282C;
+        border-radius: 8px;
+        margin-left: 100px;
+    }
+        .login-box form h5{
+            color: #22282C;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: small;
+            text-align: center;
+        }
+        .login-box form h5 a{
+            color: #22282C;
+        }
+
+        .login-box #a1 span {
+        position: absolute;
+        display: block;
+        }
+
+        .login-box #a1 span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: #22282C;
+        }
+
+        .login-box #a1 span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: #22282C;
+        }
+
+        .login-box #a1 span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: #22282C;
+        }
+
+        .login-box #a1 span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: #22282C;
+        }
+        /*END OF BOX AND INFO CSS*/
+
+        /* Footer CSS starts */
+        .footer {
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-wraper {
+            margin-top: 30px;
+        }
+        .brand-container {
+            display: flex;
+            text-align: start;
+            color: #4D5053 
+        }
+        .brand-container h1{
+            color: #000000;
+        }
+        .pages-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 12px;
+        }
+        .content li a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .copyright p{
+            text-align: center;
+            font-size: small;
+        }
+        .copyright p a{
+            padding: 30px 0;
+            text-align: center;
+            color: #4D5053;
+            text-decoration: none;
+        }
+        .copyright p a:hover {
+            color: #7CA4BE;
+        }
+        /* Footer CSS ends */
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <!--header starts-->
+    <header>
+        <div class="header">
+            <h1><span><a href="HomePage.html">SportX</a></span></h1>
+            <nav>
+            <ul>
+                <li><a href="HomePage.html"><strong>Home</strong></a></li>
+                <li><a href="Community.html"><strong>Community</strong></a></li>
+                <li><a href="Login.html"><strong>Login</strong></a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <!--header ends-->
+
+    <!--under header starts-->
+    <main>
+        <section class="box-container">
+            <div class="box-wraper">
+                <div class="box">
+                    <h1>Create a new account</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--under header ends-->
+
+
+    <!--Box Starts-->
+    <div class="login-box">
+        <h2>Sign Up</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+          <a id="a1" href="Login.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit Now ➔
+        </a>
+        <br>
+        <h5>Already have an account?<a href="Login.html"> Login</a></h5>
+        </form>
+      </div>
+    <!--Box ends-->
+
+    <!--footer starts-->
+    <footer>
+        <section class="footer">
+            <div class="brand-container">
+                <ul class="content">
+                    <li><h1><a href="HomePage.html">SportX</a></h1></li>
+                    <li>Rent private courts for great playing</li>
+                </ul>
+            </div>
+            <div class="pages-container">
+                <ul class="content">
+                    <li><h1>Pages</h1></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-container">
+                <ul class="content">
+                    <li><h1>Contact</h1></li>
+                    <li><a href="#">Riyadh, Saudi Arabia</a></li>
+                    <li><a href="#">contact@sports.com</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>Copyright &copy; <a href="HomePage.html"><strong>SportX</strong></a> | 2023</p>
+        </section>
+    </footer>
+    <!--footer ends-->
+
+
+</body>
+</html>

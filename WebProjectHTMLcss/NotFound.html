@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--style starts-->    
+    <style>
+    /* Header CSS starts */
+    ul {
+	    list-style:none;
+	}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header nav {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li a {
+        padding: 40px 10px;
+        color: #000000;
+        text-decoration: none;
+    }
+    h1 span a {
+        text-decoration: none;
+        color: #000000;
+    }
+    nav ul li a:hover{
+        color: #7CA4BE;
+    }
+    /* Header CSS starts */
+
+    /* Footer CSS starts */
+    .footer {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-wraper {
+        margin-top: 30px;
+    }
+    .brand-container {
+        display: flex;
+        text-align: start;
+        color: #4D5053 
+    }
+    .brand-container h1{
+        color: #000000;
+    }
+    .pages-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 12px;
+    }
+    .content li a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .copyright p{
+        text-align: center;
+        font-size: small;
+    }
+    .copyright p a{
+        padding: 30px 0;
+        text-align: center;
+        color: #4D5053;
+        text-decoration: none;
+    }
+    .copyright p a:hover {
+        color: #7CA4BE;
+    }
+
+    .RightSide{
+        float: right;
+        position: relative;
+        margin: auto;
+
+    }
+    .about{
+
+
+        width: 50%;
+        margin-top: 150px;
+        margin-left: 20%;
+        margin-bottom: 23%;
+        
+
+    }
+    .about #im1{
+        margin-bottom: 30px;
+    }
+
+    .about #a1 {
+        position: relative;
+        
+        padding: 10px 20px;
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: #22282C;
+        border-radius: 8px;
+        float: inherit;
+    }
+    /* Footer CSS ends */
+    </style>
+    <!--style ends-->    
+
+</head>
+<body>
+    
+
+    <!--header starts-->
+    <header>
+		<div class="header">
+			<h1><span><a href="HomePage.html">SportX</a></span></h1>
+			<nav>
+			<ul>
+				<li><a href="HomePage.html"><strong>Home</strong></a></li>
+				<li><a href="Community.html"><strong>Community</strong></a></li>
+				<li><a href="/Pages/Login.html"><strong>Login</strong></a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+    <!--header ends-->
+
+    <div class="RightSide" >
+
+        <img  src="notfound.img/error.svg"/>
+
+    </div>
+
+    <div class="about"> 
+
+    <img id="im1" src="notfound.img/Content.svg">
+    <br>
+
+    <a id="a1" href="HomePage.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        Back To Home ➔
+    </a>
+    </div>
+
+    <!--footer starts-->
+    <footer>
+        <section class="footer">
+            <div class="brand-container">
+                <ul class="content">
+                    <li><h1><a href="HomePage.html">SportX</a></h1></li>
+                    <li>Rent private courts for great playing</li>
+                </ul>
+            </div>
+            <div class="pages-container">
+                <ul class="content">
+                    <li><h1>Pages</h1></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-container">
+                <ul class="content">
+                    <li><h1>Contact</h1></li>
+                    <li><a href="NotFound.html">Riyadh, Saudi Arabia</a></li>
+                    <li><a href="#">contact@sports.com</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>Copyright &copy; <a href="HomePage.html"><strong>SportX</strong></a> | 2023</p>
+        </section>
+    </footer>
+    <!--footer ends-->
+</body>
+</html>
